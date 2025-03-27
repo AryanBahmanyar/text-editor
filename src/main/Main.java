@@ -26,16 +26,6 @@ public class Main extends JFrame {
 	public static final boolean ON_MAC = System.getProperty("os.name").toLowerCase().contains("mac");
 	public static Pane activePane = null;
 	
-	// To do:
-	// - show a dialog optional saying something like "no more occurrences found" if only a single occurrence of text was found and find next / previous
-	//   was triggered again 
-	
-	// bugs:
-	// - find previous not working correctly in all cases
-	// - status bar not showing correct line and column numbers when text wrapping is enabled due to it considering logical and not visual line breaks
-	// - file chooser closes when the save button is pressed, regardless of whether the replace file warning dialog pops up or not
-	// - some font families are not supported, making all their characters appear as the "tofu" (blank rectangle) character
-	
 	public Main() {
 		FileManager.getInstance().updateFrameTitle();  // initialize the single FileManager instance while setting the JFrame title
 		
