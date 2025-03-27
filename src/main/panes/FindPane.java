@@ -75,7 +75,7 @@ public final class FindPane extends FindBasePane {
 	}
 	
 	// note that GroupLayout requires components to be added twice (once for horizontal and once for vertical); however, this is required only for the
-    // layout creation process, and the end result is not a duplicate of each component; note that if there are mismatches between the components in
+	// layout creation process, and the end result is not a duplicate of each component; note that if there are mismatches between the components in
 	// the horizontal and vertical groups, or if any components are null, an IllegalStateException will be thrown
 	@Override
 	protected final void setLayoutGroups() {
